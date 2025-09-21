@@ -3559,7 +3559,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.732768394453131,
+        "zoomFactor": 0.6406912462476599,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7504,6 +7504,7 @@
           "actions": []
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Link",
           "include": {
             "includeConfig": 0
@@ -42184,7 +42185,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6197916666666686,
+        "zoomFactor": 0.5800155239904882,
         "windowMask": false
       }
     },
