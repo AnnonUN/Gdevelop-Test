@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Main_Menu",
   "gdVersion": {
     "build": 239,
     "major": 5,
@@ -885,7 +885,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Up_Checker",
+      "name": "Up",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -951,7 +951,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Down_Checker",
+      "name": "Down",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -1017,7 +1017,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Left_Checker",
+      "name": "Left",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -1083,7 +1083,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Right_Checker",
+      "name": "Right",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -2402,19 +2402,19 @@
         "folderName": "Checker",
         "children": [
           {
-            "objectName": "Right_Checker"
+            "objectName": "Right"
           },
           {
             "objectName": "wall_collision"
           },
           {
-            "objectName": "Left_Checker"
+            "objectName": "Left"
           },
           {
-            "objectName": "Down_Checker"
+            "objectName": "Down"
           },
           {
-            "objectName": "Up_Checker"
+            "objectName": "Up"
           },
           {
             "objectName": "Spawn"
@@ -2469,16 +2469,16 @@
       "name": "Checker_Box",
       "objects": [
         {
-          "name": "Up_Checker"
+          "name": "Up"
         },
         {
-          "name": "Left_Checker"
+          "name": "Left"
         },
         {
-          "name": "Right_Checker"
+          "name": "Right"
         },
         {
-          "name": "Down_Checker"
+          "name": "Down"
         }
       ]
     },
@@ -3559,7 +3559,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 2.2592535769555866,
+        "zoomFactor": 0.5079575118131822,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3567,7 +3567,7 @@
         {
           "name": "NumberOfRooms",
           "type": "number",
-          "value": 1
+          "value": 0
         }
       ],
       "instances": [
@@ -3881,6 +3881,70 @@
           "x": 781,
           "y": 608,
           "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Right",
+          "persistentUuid": "57a92e96-ee8d-478c-bca5-7050127a7f0a",
+          "width": 0,
+          "x": 1024,
+          "y": 512,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Up",
+          "persistentUuid": "75ee40a8-1b66-4474-8614-5d81cc38410a",
+          "width": 0,
+          "x": 768,
+          "y": 384,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Down",
+          "persistentUuid": "021f6062-9308-4a9a-acbe-e42eb47d5afd",
+          "width": 0,
+          "x": 768,
+          "y": 640,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Left",
+          "persistentUuid": "71dd5ad3-7d9c-4086-a809-883b1c86d385",
+          "width": 0,
+          "x": 512,
+          "y": 512,
+          "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7445,6 +7509,42 @@
             "includeConfig": 0
           },
           "target": "Room_Generation"
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PickNearest"
+              },
+              "parameters": [
+                "Knight",
+                "Checker_Box.X()",
+                "Checker_Box.Y()",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Four_Door\"",
+                "Up.X()",
+                "Up.Y()",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -7567,6 +7667,7 @@
       "name": "Camera",
       "events": [
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7615,7 +7716,20 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "Knight",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7624,7 +7738,6 @@
       "name": "Room_Generation",
       "events": [
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7642,7 +7755,7 @@
                     "Rooms",
                     "",
                     "",
-                    ""
+                    "no"
                   ]
                 },
                 {
@@ -7651,10 +7764,10 @@
                   },
                   "parameters": [
                     "Checker_Box",
-                    "Rooms",
+                    "Checker_Box",
                     "",
                     "",
-                    ""
+                    "yes"
                   ]
                 }
               ]
@@ -7674,7 +7787,6 @@
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7695,7 +7807,7 @@
               "parameters": [
                 "NumberOfRooms",
                 "<",
-                "7"
+                "8"
               ]
             }
           ],
@@ -7714,7 +7826,7 @@
         },
         {
           "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Right_Checker",
+          "object": "Right",
           "conditions": [],
           "actions": [],
           "events": [
@@ -7727,7 +7839,7 @@
                   },
                   "parameters": [
                     "",
-                    "Right_Checker"
+                    "Right"
                   ]
                 }
               ],
@@ -7737,10 +7849,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "Right_Checker",
+                    "Right",
                     "Randomizer",
                     "=",
-                    "RandomFloatInRange(1, 6)"
+                    "RandomInRange(1, 6)"
                   ]
                 }
               ],
@@ -7769,7 +7881,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Right_Checker",
+                            "Right",
                             "Randomizer",
                             ">=",
                             "1"
@@ -7780,7 +7892,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Right_Checker",
+                            "Right",
                             "Randomizer",
                             "<=",
                             "3"
@@ -7795,8 +7907,8 @@
                           "parameters": [
                             "",
                             "\"Left_Right\"",
-                            "Right_Checker.X()",
-                            "Right_Checker.Y()",
+                            "Right.X()",
+                            "Right.Y()",
                             ""
                           ]
                         }
@@ -7810,7 +7922,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Right_Checker",
+                            "Right",
                             "Randomizer",
                             ">=",
                             "4"
@@ -7821,7 +7933,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Right_Checker",
+                            "Right",
                             "Randomizer",
                             "<=",
                             "5"
@@ -7836,8 +7948,8 @@
                           "parameters": [
                             "",
                             "\"Right_End\"",
-                            "Right_Checker.X()",
-                            "Right_Checker.Y()",
+                            "Right.X()",
+                            "Right.Y()",
                             ""
                           ]
                         }
@@ -7851,7 +7963,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Right_Checker",
+                            "Right",
                             "Randomizer",
                             "=",
                             "6"
@@ -7866,8 +7978,8 @@
                           "parameters": [
                             "",
                             "\"Four_Door\"",
-                            "Right_Checker.X()",
-                            "Right_Checker.Y()",
+                            "Right.X()",
+                            "Right.Y()",
                             ""
                           ]
                         }
@@ -7897,8 +8009,8 @@
                       "parameters": [
                         "",
                         "\"Right_End\"",
-                        "Right_Checker.X()",
-                        "Right_Checker.Y()",
+                        "Right.X()",
+                        "Right.Y()",
                         ""
                       ]
                     }
@@ -7912,9 +8024,9 @@
                         "value": "PickNearest"
                       },
                       "parameters": [
-                        "Left_Checker",
-                        "Right_Checker.X()",
-                        "Right_Checker.Y()",
+                        "Left",
+                        "Right.X()",
+                        "Right.Y()",
                         ""
                       ]
                     }
@@ -7925,7 +8037,7 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "Left_Checker",
+                        "Left",
                         ""
                       ]
                     }
@@ -7940,7 +8052,7 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "Right_Checker",
+                        "Right",
                         ""
                       ]
                     },
@@ -7962,7 +8074,7 @@
         },
         {
           "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Left_Checker",
+          "object": "Left",
           "conditions": [],
           "actions": [],
           "events": [
@@ -7975,7 +8087,7 @@
                   },
                   "parameters": [
                     "",
-                    "Left_Checker"
+                    "Left"
                   ]
                 }
               ],
@@ -7985,7 +8097,7 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "Left_Checker",
+                    "Left",
                     "Randomizer",
                     "=",
                     "RandomFloatInRange(1, 6)"
@@ -8017,7 +8129,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Left_Checker",
+                            "Left",
                             "Randomizer",
                             ">=",
                             "1"
@@ -8028,7 +8140,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Left_Checker",
+                            "Left",
                             "Randomizer",
                             "<=",
                             "3"
@@ -8043,8 +8155,8 @@
                           "parameters": [
                             "",
                             "\"Left_Right\"",
-                            "Left_Checker.X()",
-                            "Left_Checker.Y()",
+                            "Left.X()",
+                            "Left.Y()",
                             ""
                           ]
                         }
@@ -8058,7 +8170,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Left_Checker",
+                            "Left",
                             "Randomizer",
                             ">=",
                             "4"
@@ -8069,7 +8181,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Left_Checker",
+                            "Left",
                             "Randomizer",
                             "<=",
                             "5"
@@ -8084,8 +8196,8 @@
                           "parameters": [
                             "",
                             "\"Left_End\"",
-                            "Left_Checker.X()",
-                            "Left_Checker.Y()",
+                            "Left.X()",
+                            "Left.Y()",
                             ""
                           ]
                         }
@@ -8099,7 +8211,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Left_Checker",
+                            "Left",
                             "Randomizer",
                             "=",
                             "6"
@@ -8114,8 +8226,8 @@
                           "parameters": [
                             "",
                             "\"Four_Door\"",
-                            "Left_Checker.X()",
-                            "Left_Checker.Y()",
+                            "Left.X()",
+                            "Left.Y()",
                             ""
                           ]
                         }
@@ -8145,8 +8257,8 @@
                       "parameters": [
                         "",
                         "\"Left_End\"",
-                        "Left_Checker.X()",
-                        "Left_Checker.Y()",
+                        "Left.X()",
+                        "Left.Y()",
                         ""
                       ]
                     }
@@ -8160,9 +8272,9 @@
                         "value": "PickNearest"
                       },
                       "parameters": [
-                        "Right_Checker",
-                        "Left_Checker.X()",
-                        "Left_Checker.Y()",
+                        "Right",
+                        "Left.X()",
+                        "Left.Y()",
                         ""
                       ]
                     }
@@ -8173,7 +8285,7 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "Right_Checker",
+                        "Right",
                         ""
                       ]
                     }
@@ -8188,7 +8300,7 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "Left_Checker",
+                        "Left",
                         ""
                       ]
                     },
@@ -8215,7 +8327,7 @@
         },
         {
           "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Up_Checker",
+          "object": "Up",
           "conditions": [],
           "actions": [],
           "events": [
@@ -8228,7 +8340,7 @@
                   },
                   "parameters": [
                     "",
-                    "Up_Checker"
+                    "Up"
                   ]
                 }
               ],
@@ -8238,7 +8350,7 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "Up_Checker",
+                    "Up",
                     "Randomizer",
                     "=",
                     "RandomFloatInRange(1, 6)"
@@ -8270,7 +8382,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Up_Checker",
+                            "Up",
                             "Randomizer",
                             ">=",
                             "1"
@@ -8281,7 +8393,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Up_Checker",
+                            "Up",
                             "Randomizer",
                             "<=",
                             "3"
@@ -8296,8 +8408,8 @@
                           "parameters": [
                             "",
                             "\"Down_Up\"",
-                            "Up_Checker.X()",
-                            "Up_Checker.Y()",
+                            "Up.X()",
+                            "Up.Y()",
                             ""
                           ]
                         }
@@ -8311,7 +8423,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Up_Checker",
+                            "Up",
                             "Randomizer",
                             ">=",
                             "4"
@@ -8322,7 +8434,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Up_Checker",
+                            "Up",
                             "Randomizer",
                             "<=",
                             "5"
@@ -8337,8 +8449,8 @@
                           "parameters": [
                             "",
                             "\"Up_End\"",
-                            "Up_Checker.X()",
-                            "Right_Checker.Y()",
+                            "Up.X()",
+                            "Right.Y()",
                             ""
                           ]
                         }
@@ -8352,7 +8464,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Up_Checker",
+                            "Up",
                             "Randomizer",
                             "=",
                             "6"
@@ -8367,8 +8479,8 @@
                           "parameters": [
                             "",
                             "\"Four_Door\"",
-                            "Up_Checker.X()",
-                            "Up_Checker.Y()",
+                            "Up.X()",
+                            "Up.Y()",
                             ""
                           ]
                         },
@@ -8379,8 +8491,8 @@
                           "parameters": [
                             "",
                             "\"Down_Up\"",
-                            "Up_Checker.X()",
-                            "Up_Checker.Y()",
+                            "Up.X()",
+                            "Up.Y()",
                             ""
                           ]
                         }
@@ -8410,8 +8522,8 @@
                       "parameters": [
                         "",
                         "\"Up_End\"",
-                        "Up_Checker.X()",
-                        "Up_Checker.Y()",
+                        "Up.X()",
+                        "Up.Y()",
                         ""
                       ]
                     }
@@ -8425,9 +8537,9 @@
                         "value": "PickNearest"
                       },
                       "parameters": [
-                        "Down_Checker",
-                        "Up_Checker.X()",
-                        "Up_Checker.Y()",
+                        "Down",
+                        "Up.X()",
+                        "Up.Y()",
                         ""
                       ]
                     }
@@ -8438,7 +8550,7 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "Down_Checker",
+                        "Down",
                         ""
                       ]
                     }
@@ -8453,7 +8565,7 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "Up_Checker",
+                        "Up",
                         ""
                       ]
                     },
@@ -8475,7 +8587,7 @@
         },
         {
           "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Down_Checker",
+          "object": "Down",
           "conditions": [],
           "actions": [],
           "events": [
@@ -8488,7 +8600,7 @@
                   },
                   "parameters": [
                     "",
-                    "Down_Checker"
+                    "Down"
                   ]
                 }
               ],
@@ -8498,7 +8610,7 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "Down_Checker",
+                    "Down",
                     "Randomizer",
                     "=",
                     "RandomFloatInRange(1, 6)"
@@ -8530,7 +8642,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Down_Checker",
+                            "Down",
                             "Randomizer",
                             ">=",
                             "1"
@@ -8541,7 +8653,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Down_Checker",
+                            "Down",
                             "Randomizer",
                             "<=",
                             "3"
@@ -8556,8 +8668,8 @@
                           "parameters": [
                             "",
                             "\"Down_Up\"",
-                            "Down_Checker.X()",
-                            "Down_Checker.Y()",
+                            "Down.X()",
+                            "Down.Y()",
                             ""
                           ]
                         }
@@ -8571,7 +8683,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Down_Checker",
+                            "Down",
                             "Randomizer",
                             ">=",
                             "4"
@@ -8582,7 +8694,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Down_Checker",
+                            "Down",
                             "Randomizer",
                             "<=",
                             "5"
@@ -8597,8 +8709,8 @@
                           "parameters": [
                             "",
                             "\"Down_End\"",
-                            "Down_Checker.X()",
-                            "Down_Checker.Y()",
+                            "Down.X()",
+                            "Down.Y()",
                             ""
                           ]
                         }
@@ -8612,7 +8724,7 @@
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
-                            "Down_Checker",
+                            "Down",
                             "Randomizer",
                             "=",
                             "6"
@@ -8627,8 +8739,8 @@
                           "parameters": [
                             "",
                             "\"Four_Door\"",
-                            "Down_Checker.X()",
-                            "Down_Checker.Y()",
+                            "Down.X()",
+                            "Down.Y()",
                             ""
                           ]
                         },
@@ -8639,8 +8751,8 @@
                           "parameters": [
                             "",
                             "\"Down_Up\"",
-                            "Down_Checker.X()",
-                            "Down_Checker.Y()",
+                            "Down.X()",
+                            "Down.Y()",
                             ""
                           ]
                         }
@@ -8670,8 +8782,8 @@
                       "parameters": [
                         "",
                         "\"Down_End\"",
-                        "Down_Checker.X()",
-                        "Down_Checker.Y()",
+                        "Down.X()",
+                        "Down.Y()",
                         ""
                       ]
                     }
@@ -8685,9 +8797,9 @@
                         "value": "PickNearest"
                       },
                       "parameters": [
-                        "Up_Checker",
-                        "Down_Checker.X()",
-                        "Down_Checker.Y()",
+                        "Up",
+                        "Down.X()",
+                        "Down.Y()",
                         ""
                       ]
                     }
@@ -8698,7 +8810,7 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "Up_Checker",
+                        "Up",
                         ""
                       ]
                     }
@@ -8713,7 +8825,7 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "Down_Checker",
+                        "Down",
                         ""
                       ]
                     },
@@ -8729,6 +8841,25 @@
                     }
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Up_End\"",
+                "Up.X()",
+                "Up.X()",
+                "Up.X()"
               ]
             }
           ]
@@ -41971,8 +42102,8 @@
           "name": "Four_Door",
           "persistentUuid": "457840ca-408d-484a-be70-bd677fd09a2e",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -41984,11 +42115,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Right_Checker",
+          "name": "Right",
           "persistentUuid": "6e060c62-c3e0-4227-a060-c5f1836debc4",
           "width": 0,
-          "x": 1024,
-          "y": 512,
+          "x": 256,
+          "y": 0,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42000,27 +42131,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Up_Checker",
-          "persistentUuid": "4dda0b8f-09c5-4291-b9c9-45884ac9ecc8",
-          "width": 0,
-          "x": 768,
-          "y": 384,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Down_Checker",
+          "name": "Down",
           "persistentUuid": "8b39d865-4cf0-4f30-8c93-cb90304f880e",
           "width": 0,
-          "x": 768,
-          "y": 640,
+          "x": 0,
+          "y": 128,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -42032,12 +42147,28 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Left_Checker",
+          "name": "Left",
           "persistentUuid": "ac3c3e05-c13b-4f44-b78b-56f7575b2058",
           "width": 0,
-          "x": 512,
-          "y": 512,
+          "x": -256,
+          "y": 0,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Up",
+          "persistentUuid": "8db6f012-3cfd-4c53-b686-216f772e6cb0",
+          "width": 0,
+          "x": 0,
+          "y": -128,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -42053,7 +42184,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.46799720914007,
+        "zoomFactor": 0.6197916666666686,
         "windowMask": false
       }
     },
@@ -42070,8 +42201,8 @@
           "name": "Up_End",
           "persistentUuid": "c8a4bdd0-c101-4bd6-91cc-dcb4dc27d71a",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -42083,11 +42214,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Up_Checker",
+          "name": "Up",
           "persistentUuid": "2831ffb4-88b3-491e-b863-1f4882fd4fb3",
           "width": 0,
-          "x": 768,
-          "y": 384,
+          "x": 0,
+          "y": -128,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42104,7 +42235,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.662295566550638,
+        "zoomFactor": 0.4598521426736335,
         "windowMask": false
       }
     },
@@ -42121,8 +42252,8 @@
           "name": "Right_Up",
           "persistentUuid": "e42bd253-e732-4c6f-95d4-37b3094daff7",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -42134,11 +42265,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Right_Checker",
+          "name": "Right",
           "persistentUuid": "8095391d-9338-4e89-bc6c-1735b369c5e5",
           "width": 0,
-          "x": 1024,
-          "y": 512,
+          "x": 256,
+          "y": 0,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42150,11 +42281,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Up_Checker",
+          "name": "Up",
           "persistentUuid": "8324f268-b28a-4260-acfc-4ce0b53e7117",
           "width": 0,
-          "x": 768,
-          "y": 384,
+          "x": 0,
+          "y": -128,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -42171,7 +42302,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.38958562738272845,
+        "zoomFactor": 0.9227465364204563,
         "windowMask": false
       }
     },
@@ -42188,8 +42319,8 @@
           "name": "Right_End",
           "persistentUuid": "9426b441-b819-40d6-85b6-128bfc7927a0",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -42201,11 +42332,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Right_Checker",
+          "name": "Right",
           "persistentUuid": "0e190fb7-9811-49cb-bdd2-2f30b9f1da4a",
           "width": 0,
-          "x": 1024,
-          "y": 512,
+          "x": 256,
+          "y": 0,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42222,7 +42353,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3645833333333333,
+        "zoomFactor": 0.5427920802473281,
         "windowMask": false
       }
     },
@@ -42239,8 +42370,8 @@
           "name": "Left_Right",
           "persistentUuid": "e1190040-fd15-4129-a34c-d2988dd5af56",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -42252,11 +42383,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Left_Checker",
+          "name": "Left",
           "persistentUuid": "50007123-333b-4fb5-b561-c371bff401ae",
           "width": 0,
-          "x": 512,
-          "y": 512,
+          "x": -256,
+          "y": 0,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42268,11 +42399,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Right_Checker",
+          "name": "Right",
           "persistentUuid": "082cb276-8c98-492a-9954-fc75691b1c69",
           "width": 0,
-          "x": 1024,
-          "y": 512,
+          "x": 256,
+          "y": 0,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -42289,7 +42420,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.8635277700823937,
+        "zoomFactor": 0.9227465364204566,
         "windowMask": false
       }
     },
@@ -42306,8 +42437,8 @@
           "name": "Left_Up",
           "persistentUuid": "95cf38aa-d0aa-45f6-9d15-87b7b6fbe250",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -42319,11 +42450,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Left_Checker",
+          "name": "Left",
           "persistentUuid": "57be3cc2-edac-4ee2-9420-9c0db5acdc57",
           "width": 0,
-          "x": 512,
-          "y": 512,
+          "x": -256,
+          "y": 0,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42335,11 +42466,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Up_Checker",
+          "name": "Up",
           "persistentUuid": "34f7a159-88d1-42dd-a231-7f4f6e589040",
           "width": 0,
-          "x": 768,
-          "y": 384,
+          "x": 0,
+          "y": -128,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -42356,7 +42487,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3645833333333333,
+        "zoomFactor": 0.5610952083582067,
         "windowMask": false
       }
     },
@@ -42373,8 +42504,8 @@
           "name": "Left_End",
           "persistentUuid": "8ab1713a-51bd-4328-9688-58b7dc9cb99b",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -42386,11 +42517,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Left_Checker",
+          "name": "Left",
           "persistentUuid": "c1a21213-6963-462c-980b-615dd8ad3722",
           "width": 0,
-          "x": 512,
-          "y": 512,
+          "x": -256,
+          "y": 0,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42407,7 +42538,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3645833333333333,
+        "zoomFactor": 0.8635277700823939,
         "windowMask": false
       }
     },
@@ -42424,8 +42555,8 @@
           "name": "Down_Up",
           "persistentUuid": "d1e45818-30a2-4136-865f-a3d93d6f1b2d",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -42437,11 +42568,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Up_Checker",
+          "name": "Up",
           "persistentUuid": "accf8b42-326a-4b91-9c29-d9cd3bc82e00",
           "width": 0,
-          "x": 768,
-          "y": 384,
+          "x": 0,
+          "y": -128,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42453,11 +42584,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Down_Checker",
+          "name": "Down",
           "persistentUuid": "db24c029-663d-4778-9782-171cc86266f6",
           "width": 0,
-          "x": 768,
-          "y": 640,
+          "x": 0,
+          "y": 128,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -42474,7 +42605,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3645833333333333,
+        "zoomFactor": 0.7315786463753028,
         "windowMask": false
       }
     },
@@ -42491,8 +42622,8 @@
           "name": "Down_Right",
           "persistentUuid": "6f30ac1e-3c3c-4451-8707-16bc5a689ae4",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -42504,11 +42635,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Down_Checker",
+          "name": "Down",
           "persistentUuid": "b8fb05b9-2643-4759-8258-fe78fa4fda25",
           "width": 0,
-          "x": 768,
-          "y": 640,
+          "x": 0,
+          "y": 128,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42520,11 +42651,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Right_Checker",
+          "name": "Right",
           "persistentUuid": "380796d4-87c6-4587-b9af-4ed06cc536a1",
           "width": 0,
-          "x": 1024,
-          "y": 512,
+          "x": 256,
+          "y": 0,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -42541,7 +42672,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3645833333333333,
+        "zoomFactor": 0.7077142870146654,
         "windowMask": false
       }
     },
@@ -42558,8 +42689,8 @@
           "name": "Down_Left",
           "persistentUuid": "65ad6bd0-6002-4b7d-b73b-faa0c1d6410e",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -42571,11 +42702,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Down_Checker",
+          "name": "Down",
           "persistentUuid": "9201bf6f-3926-4a48-8301-85b11f2ae8ce",
           "width": 0,
-          "x": 768,
-          "y": 640,
+          "x": 0,
+          "y": 128,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42587,11 +42718,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Left_Checker",
+          "name": "Left",
           "persistentUuid": "4f2e8e48-3649-4153-b98c-d920f3320861",
           "width": 0,
-          "x": 512,
-          "y": 512,
+          "x": -256,
+          "y": 0,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -42608,7 +42739,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3645833333333333,
+        "zoomFactor": 0.9538618542089513,
         "windowMask": false
       }
     },
@@ -42625,8 +42756,8 @@
           "name": "Down_End",
           "persistentUuid": "99e88cd2-3a84-4386-963f-12889cd8994e",
           "width": 0,
-          "x": 768,
-          "y": 512,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -42638,11 +42769,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Down_Checker",
+          "name": "Down",
           "persistentUuid": "f911e7d4-a7ac-47b2-8db9-2087004093cd",
           "width": 0,
-          "x": 768,
-          "y": 640,
+          "x": 0,
+          "y": 128,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42659,7 +42790,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3645833333333333,
+        "zoomFactor": 0.491387754532936,
         "windowMask": false
       }
     }
