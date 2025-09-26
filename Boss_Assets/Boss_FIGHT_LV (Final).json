@@ -1,0 +1,5003 @@
+{
+  "firstLayout": "Boss_FIGHT",
+  "gdVersion": {
+    "build": 240,
+    "major": 5,
+    "minor": 5,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "d204d3fa-3624-445d-9353-7f531fbf5937",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "templateSlug": "starting-top-down-pixel",
+    "version": "1.0.0",
+    "name": "Boss_FIGHT_LV (Final) ",
+    "description": "Boss fight",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [
+      "2sJMVmsTxCWlwMlVcxutfKs041P2"
+    ],
+    "authorUsernames": [
+      "Callisto_Morningstar"
+    ],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/Flat dark joystick border2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat dark joystick border.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/1db606cabd7372d1494ba5934bc25bcdd72f5a213c4a27509be57c3f4d5aecca_Flat dark joystick border.png",
+          "name": "Flat dark joystick border.png"
+        }
+      },
+      {
+        "file": "assets/Flat dark joystick thumb2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat dark joystick thumb.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/10167ade22c4a6b48324e6c1d1bd6dc74179d7bed0775890903f418b4a05c8a1_Flat dark joystick thumb.png",
+          "name": "Flat dark joystick thumb.png"
+        }
+      },
+      {
+        "file": "assets/StartingPixelPlayer2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingPixelPlayer.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingPixelGroundTilemap2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingPixelGroundTilemap.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingPixelWall2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingPixelWall.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingPixelObstacle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingPixelObstacle.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_StartingPixelPlayer3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\StartingPixelPlayer",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_StartingPixelObstacle3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\StartingPixelObstacle",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_StartingPixelObstacle4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\StartingPixelObstacle2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Boss_Charge_ATK5.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Charge_ATK1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/7d7c148195dcc8e51f5942363d8b623ae60538ff3cb53a7b5edd15c55258c1c2-Boss_Charge_ATK1.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_Charge_ATK6.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Charge_ATK2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/bbd1dd28d4ec38b342eafd4e6710e155c7af7a861e917f3a8478b238742f48d4-Boss_Charge_ATK2.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_Charge_ATK7.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Charge_ATK3.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/9ede3d51b5ef43d36606c038124b4e5909b00ee5d09cccc550672d35466be9f2-Boss_Charge_ATK3.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_Charge_ATK8.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Charge_ATK4.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/a7ebcda08b8c5eb0b858b29d361708d9deea3e3ac1ad321ac76d892ccec2ab5b-Boss_Charge_ATK4.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Charge_WindUP6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Charge_WindUP",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash_Hit2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dash_Hit.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/b8d343a5c494d112720aac66799f65076e6d017da131300be5d52a1b258ffcec-Dash_Hit.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_Music_L2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Music_L1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/5f3bc068f58f031c45d8c915099c0b55e83c7a1ac16f1aedf35f2728a93d31c7-Boss_Music_L1.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_BGM_l2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_BGM_l1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/67d38ee57dd70e7aacb6497a95aff5776d2a510357b602284408c0ed73c66787-Boss_BGM_l1.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_BGM_Layer2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_BGM_Layer 1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ee8eed5161f5c6e9756201914b371580a690de6b00054602178a127d7eab276f-Boss_BGM_Layer 1.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_Dash2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Dash 1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/4801bb5420cc0046fd7575fda231c90e2bd8c751774a1a6036ec3c05da262d77-Boss_Dash 1.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_Dash 3.6.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Dash 3.5.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/9b0562eaa3a37b91738573df24030627233e5ef76701cd7ac6f51038119f158a-Boss_Dash 3.5.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_Dash3.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Dash 2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/c6cf3c13c23da680d23931a38d76a48d1269aecc687600fcacf3aeb819e84f28-Boss_Dash 2.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_Dash4.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Dash 3.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/5bb9ece6ca02fc6b2f60aab05a432f82a49683f4bc9fd558f0f963ed733610b1-Boss_Dash 3.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_Dash5.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Dash 4.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/58473b54c9479128bd7d0849af440f6ebe5eb14f55d0db2755135c88ee619b87-Boss_Dash 4.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_BGM_Layer3.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_BGM_Layer 2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/98219ba9522aed0ef0ee6e37eb0c50b6dd557df6ba9a2158882b260460dfce9b-Boss_BGM_Layer 2.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_BGM_Layer4.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_BGM_Layer 3.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/c3c1ff33fa062c016504f041620a83694209d176dd5d380c18d9f314901e300b-Boss_BGM_Layer 3.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_BGM_Layer5.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_BGM_Layer 4.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/28dcb07a470b71107674b8444942a24fad3c834d781c210d49d99489f2d21901-Boss_BGM_Layer 4.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Boss_BGM_LMS2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_BGM_LMS.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/04cb413b449308a8505c9f249e89557e7c467b2463296b1b7995c08cbbb273d0-Boss_BGM_LMS.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/NewSprite21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite25.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite27.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite29.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite30.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite31.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite32.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite33.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite34.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite35.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite16",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite36.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite17",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite18",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite38.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite19",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/c00lkidd3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "c00lkidd.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/91d9ceb68a44007d5d4cfbaf8fcc1028b40d8c00f3bc8cc28578e3550b83a24e-c00lkidd.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/c00lkidd4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "c00lkidd",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite39.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite20",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_cleave_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ff6310fd5d608d48e59e6ebfac51473761db444ceff838dea13c7cd641a5fc9e-demon_cleave_1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/36fea16212279ddbe248ef8e1ff36af7c54d65d99ed51d5d07f918284982e007-demon_cleave_2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f7127c4049b73558608165e49eed086e30f687f6ce5ff521454350d4a33ebb18-demon_cleave_3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/a88276f1ae2dd7f42dec31b356db7599f5f1a84c6b64a28ef3a5be5f98eaf4b5-demon_cleave_4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/48b15a80149d5ddf13fbb9583ac92bb758071835c9280db3ef6a6cc89ca74c59-demon_cleave_5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/0a059df0bf94c7122941c3ded515d1b3bcfdb84b5d3787e2682f606819ca1fdf-demon_cleave_6.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_7.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e4c027faab6db65518bb11d9e5afd86536d35b79dde8f67f5e5b816c5d1e8fdf-demon_cleave_7.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_8.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/7a1e4fc20bb32e73f622690987eedd88adc832bef31f1d8eb7504427cb2d147d-demon_cleave_8.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_9.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/af83922e9e87b78dba376d0cb57b1f7e6071b9900821226b4f01fa9eb1e927a1-demon_cleave_9.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_10.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f569755fa9e1b0f6c41ef8090da53c261da82b0f7f8539f96c47b7130228378b-demon_cleave_10.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_11.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/14b6c050e716877f67cf68b69c0f2502ae35202747a3503db78f572e421fd619-demon_cleave_11.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_12.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/a668af4a634299a7bf90bad5ae28c1a883d596c6177c77b62eece6c7d6fc7a27-demon_cleave_12.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_13.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/caf19a0c0ad1ba00aff730ee07de418a0cf66fcf490364516062b172d9603ef3-demon_cleave_13.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_14.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/34c3b713ed8d41131f2575c047d3a9f3628d5eed4e96d362ac24fb5c9908776e-demon_cleave_14.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_cleave_30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_cleave_15.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e3ecc0e18afdbdeff98893206053a884a66a7cc1f95a8b494069aae6b602291b-demon_cleave_15.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_1.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/9dd29cd2b0fad5fdd40598feaa5895d4d3fd906a6fde4b415380d98af25ad35b-walk_1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_2.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/5ac421f21fbfa046e01c35915040369f2481b0d9288dd4cd2052bee3d5a6745d-walk_2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_3.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/c9f00ec9b44f20899e674362ad90d902c4be0000440b7d194d264f6ee66e520a-walk_3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_4.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/72e11496755784559c07651f604fd5d24163636d3c739cf7cb1b4ade0b3ba4ed-walk_4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_5.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/bec1c70c645c7a461a0760a87144e197220a9e974fc3c010cc48956e00c382cc-walk_5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_6.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/336e679acd85370b11a0408d01e3f1c319eb721ebae4cb182554dc506a3f8306-walk_6.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_7.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_7.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/80809923137a4dc595c548bd2a1140d7894c86520aa742504fb7bd342d83aed5-walk_7.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_8.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_8.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/692f36d3d1a24c61193fb7bcce8660ec9b51201ac58bd903eb23a8e8d21aeb79-walk_8.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_9.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_9.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/9f94f6120c454ccb179fcf228ce6dac249b8cdaa0599b1bee57ddde7553f6104-walk_9.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_10.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_10.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d80955e53a7aee96670f2c7e1030c3b4ae568eca8b83d76476c874b5040974fb-walk_10.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_11.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_11.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/2f400a5d20597bba8ade631acd277c5df2cfdbb64c2df6ecd81021844e02be49-walk_11.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_12.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_12.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/7113fe47af709a35b0b5165463ab7c5af0235fc9675ced5c632c2f2e682f52ce-walk_12.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/fly_1.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "fly_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/81595aa0e7ce22aee0db4381e69f6ec17cb21b66bf2d80aac9b76841148ba102-fly_1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/fly_2.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "fly_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/5df5e2bb933a6a5464641da7e4ceadaf06635e65cf7456752c672b941bc2ee84-fly_2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/fly_3.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "fly_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/99287847e178c0e97410222a5313eda7fc25ad53c500127cc9163c58231ff7e4-fly_3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/fly_4.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "fly_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/4e8c170b5c0b3a434ed4aa53f42f26c65d49995b9341786a81c945dccb5e3312-fly_4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/fly_5.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "fly_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/939e7bbced3fbe52001f141906b0d201085fdbd1f100edba2fc8ef7e44ca16c2-fly_5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/fly_6.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "fly_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/4721ab857462ff8835494dc5a62169280001d8fe921239c9626dc65959ee1424-fly_6.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/1atk_1.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ad0b166db5c61bcd18c01d0cd89cd7c71c1f2fd0346e9f192004d5ea1ae7f090-1atk_1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/1atk_2.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/9127a66c2d66a2309ccda67ed0115273a7347e9addd9dcddf9a9006484f3b85d-1atk_2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/1atk_3.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d20fbcff4e074a717db614bbff500694f33ac53b91005dd8d642522d165d460a-1atk_3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/1atk_4.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/8424cbdc8a6295cc21f7900652e7f3cbc7f9814e192da65b3cd57ac164569198-1atk_4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/1atk_5.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/32b100d5e2130642b8cfbddb16129d0794854991c84eca1c2942c6db0b2efb63-1atk_5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/1atk_6.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/5e64418059ecf93a0725c9606644ff2d3154c53dbe90bdc31afd14da2d88c9ac-1atk_6.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/1atk_7.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_7.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f2cb2419e1a3a7152e506fb1015c1f832bdb2504aca09f2a1807c75148f3fc91-1atk_7.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/2atk_1.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "2atk_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e7faba4896bdc388f24138a77a514adf16ea2c43efbc332e88d80d9ae18de40b-2atk_1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/2atk_2.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "2atk_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/65ca9b4876d13c4feeb941c39100aa488c2abca0b1369a94b87851f24048528b-2atk_2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/2atk_3.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "2atk_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/5b17a47d14869776d9242699f81db0f1c9d2ee35d848591b828885b13f55433b-2atk_3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/2atk_4.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "2atk_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/5cfb9a30ff74963be44269f2bd0f188ef105f6e3137fb830e4b4c2c57e05f800-2atk_4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/2atk_5.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "2atk_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/200b2dc57ee2626938dc952cf76c4267fb5d2ef9dd25d04ca33de82855ae7a69-2atk_5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/2atk_6.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "2atk_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/6030b60f612eaa5142bc12294f41b49fa232f7550d09b990122db1037de79d18-2atk_6.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/2atk_7.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "2atk_7.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/9cdceca55a41e55eda4f022192edd4bb5bea28669d24ab256707e48aaa6d07e2-2atk_7.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/2atk_8.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "2atk_8.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d61b47c078be2163d2210920519baadc45d3843f7bd3e41132f26d38a5186c36-2atk_8.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/2atk_9.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "2atk_9.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f78af031fad8bddf85fd15cb981857d2ad5ae46f2b8543871d6f5144ef4fd7e6-2atk_9.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/assets_StartingPixelPlayer4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\StartingPixelPlayer2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Move_Right2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Move_Right",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Move_left2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Move_left",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run38.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run39.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run40.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run41.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run42.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run43.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run44.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run45.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run46.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run47.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run48.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Laser_sheet2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Laser_sheet.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f131c8ad29c6e8f5a50cef532028a057ec2bb0ccf152ea40e943fe34d0e0a808-Laser_sheet.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Try and block this2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Try and block this.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/93d97a28cfcf2e2de989e3be2aa88c0d2c5a667a633ec11d6ed209c5a1c97b6e-Try and block this.wav",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Come my crew2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Come my crew.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/dd4f47ab5eb7733e7d92b45a0f05603b36c3985d1d0847291d18e1be5beb1284-Come my crew.wav",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Minion_(Ready or not here we come)2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Minion_(Ready or not here we come).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f21afeee293961c25007794f811c1e7e88ce535066157992d1b989ef18fe83ab-Minion_(Ready or not here we come).mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_speed3.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "walk_speed.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ab4e42cc0f6613df9f47fc043f374c20b5b133a4a846d8ac0e6549d8919a8f30-walk_speed.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/We shall see whos evil is greater2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "We shall see whos evil is greater.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/0bf973338f582c9a65e5862d97475f8cceaef5b8a77a237aa22b662146b356fd-We shall see whos evil is greater.wav",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/rattle em boys2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "rattle em boys.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/c8073d37626b84f91c19090d9111b1b169cc19c86bfbd0ebeb10c9e050e181cc-rattle em boys.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/walk_speed4.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "walk_speed2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d0606d6724e8b538b97d708cf66b6fac6f9c94009ffda9febf6277cf61956f37-walk_speed2.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/I am captain of this lake2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "I am captain of this lake.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ec286ba05d1cbf539cc18ac173e74d3bc44144551bb5ae1ed280c2e65fb19a00-I am captain of this lake.wav",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Run_Right13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run_Right24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run_Right12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run49.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run50.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run51.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run52.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run16",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run53.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run17",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run54.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run18",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run55.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run19",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run56.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run20",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run57.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run21",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run58.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run22",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run59.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run23",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run60.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run24",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run61.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run25",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run62.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run26",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run63.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run27",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run64.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run28",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run65.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run29",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run66.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run30",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run67.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run31",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run68.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run32",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run69.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run33",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run70.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run34",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run71.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run35",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run72.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run36",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Charge_WindUP7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Charge_WindUP2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Charge_WindUP8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Charge_WindUP3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Charge_WindUP9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Charge_WindUP4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Charge_WindUP10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Charge_WindUP5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/the time is upon us my dear crew2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "the time is upon us my dear crew.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e37c989eaaa6a48f386aa34df77d19febe5561be86f0960e34cfea3a1ee263d5-the time is upon us my dear crew.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/It's just u and me2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "It's just u and me.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d6c00ebd112390cde3b72a759eaac12d9042c4b29504a21aaa35f1717f07c0fc-It's just u and me.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/WalkspeedOverrideTimeout2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "WalkspeedOverrideTimeout.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e1c508679b7ff0a6baa26e0f4b4494f3e347aed51c46d16c1a835cf9b34cb707-WalkspeedOverrideTimeout.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Atk_Basic22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic25.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic27.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Atk_Basic28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Atk_Basic14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Summoning_Pose9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Summoning_Pose",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Summoning_Pose10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Summoning_Pose2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Summoning_Pose11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Summoning_Pose3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Summoning_Pose12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Summoning_Pose4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Summoning_Pose13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Summoning_Pose5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Summoning_Pose14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Summoning_Pose6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Summoning_Pose15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Summoning_Pose7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Summoning_Pose16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Summoning_Pose8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/GROX IGHT BET.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "GROX IGHT BET.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/19081b391b892e5d0aaf905bcdc35a9d60c4dc2a946cc7ea1aaa9bb418864178-GROX IGHT BET.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Nandito na si Bong Revilla Budots Commercial Meme Funny compilation.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Nandito na si Bong Revilla Budots Commercial Meme Funny compilation.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/8d40dd57c6c34e627aa478a8d05940d1db700df91d5352250401d905b93aed8f-Nandito na si Bong Revilla Budots Commercial Meme Funny compilation.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Collision_CHECK.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Collision_CHECK",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hurt.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hurt.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/42e44c649783ec2bbca74ac788b08881086d4f20795d80ca144090d355d8a842-hurt.wav",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Collision_CHECK2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Collision_CHECK2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Collision_CHECK3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Collision_CHECK3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Collision_CHECK4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Collision_CHECK4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Collision_CHECK5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Collision_CHECK5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Collision_CHECK6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Collision_CHECK6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Collision_CHECK7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Collision_CHECK7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gash_Intro.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Gash_Intro.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/4c95559d9d82f93a85f52e4c6aade883a32643bf9ff00120aca663983f12878b-Gash_Intro.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Blaming_sibling_line.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Blaming_sibling_line.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e26ebf90c552e889c8ea2593dc316acd554df2f529cd2f6aff5ea872ee3ca475-Blaming_sibling_line.wav",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/1atk_1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1atk_2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1atk_3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1atk_4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1atk_5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1atk_6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1atk_7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1atk_7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walking_sound_effect.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "walking_sound_effect.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/bd389f51316a47cfef940d9d8e2fa4d2e1041baf9af8aec62d1609e223384d97-walking_sound_effect.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Dash_Sound_Effect.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dash_Sound_Effect.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/62f378a9e00b57a774b84e45766f6ba24ab64aef9d5f27e5fe8eb2f6a3933c63-Dash_Sound_Effect.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Phase 2_INTRO.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Phase 2_INTRO.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/24ce0c08c3baa4f9b34da2b8d36cfbfc6487b111b6110d99e4b526f45dc0b778-Phase 2_INTRO.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/(Phase 2 Voice Line) Useless_CREWMATES.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "(Phase 2 Voice Line) Useless_CREWMATES.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d1b780852a75b43e48c722ab6150a9ac9db498b1d66ca79cc98c91096cb5d1e2-(Phase 2 Voice Line) Useless_CREWMATES.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/(Phase 3 Voice Line)Impail my skull.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "(Phase 3 Voice Line)Impail my skull.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/9f80e3704979a8ef17927f658a9b3362c4fc43c9b01a3777a48f3724fcb0fe79-(Phase 3 Voice Line)Impail my skull.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/547623339_2719021054970044_1098049542299618793_n - Copy (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "547623339_2719021054970044_1098049542299618793_n - Copy (3).png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d1459b957da8c0b85e8374b5c49945e8fd17204d1ac92251d52c3327e70a43cf-547623339_2719021054970044_1098049542299618793_n - Copy (3).png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/547623339_2719021054970044_1098049542299618793_n - Copy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "547623339_2719021054970044_1098049542299618793_n - Copy.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/8a2da8b5427a8964c912a09ba97d4c1241c97dec49016f551d1ff90368953030-547623339_2719021054970044_1098049542299618793_n - Copy.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/547623339_2719021054970044_1098049542299618793_n - Copy (7).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "547623339_2719021054970044_1098049542299618793_n - Copy (7).png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e764d084349345e26bc2beeb714cd94f8684bd89505d514b39d8468e6ec89c90-547623339_2719021054970044_1098049542299618793_n - Copy (7).png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/547623339_2719021054970044_1098049542299618793_n - Copy (8).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "547623339_2719021054970044_1098049542299618793_n - Copy (8).png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/1c20bec503399988e50c98f0ec84e9182ec45d4f4a99723711d3a86dee2cc838-547623339_2719021054970044_1098049542299618793_n - Copy (8).png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/547623339_2719021054970044_1098049542299618793_n - Copy (4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "547623339_2719021054970044_1098049542299618793_n - Copy (4).png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/af4bd99b0c7833727aa1dfc5e30c217413389e1466b1121f8b730c3809290e54-547623339_2719021054970044_1098049542299618793_n - Copy (4).png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/547623339_2719021054970044_1098049542299618793_n - Copy (11).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "547623339_2719021054970044_1098049542299618793_n - Copy (11).png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/5fff5922815c3763a39afcd8d54d10a939a23aae210180ae00f924c6b7aa3ea5-547623339_2719021054970044_1098049542299618793_n - Copy (11).png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/547623339_2719021054970044_1098049542299618793_n - Copy (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "547623339_2719021054970044_1098049542299618793_n - Copy (2).png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/1251955b66098baeec14e14eb90592212141cbfb79d2b37994b8a7d7ec4ed937-547623339_2719021054970044_1098049542299618793_n - Copy (2).png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/sprite-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprite-1-1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f8f35a6e44f495563161c9aa7977924d6c65f94d521fadc0969b4630fc57e962-sprite-1-1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/sprite-2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprite-2-1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/82da51f947d213dd0949a1ef041f9ab4eff77c44c28af8336fcb9443eae5b42e-sprite-2-1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/sprite-2-1.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "sprite-2-1.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sprite-2-1.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "sprite-2-1.png3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sprite-1-1.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "sprite-1-1.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sprite-1-1.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "sprite-1-1.png3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sprite-4-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprite-4-4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/a55a0da7ca0bb0d95fcd08a90994098dca14fa00dd7b72f4bbe681f191092fd0-sprite-4-4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/sprite-4-4.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "sprite-4-4.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sprite-4-4.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "sprite-4-4.png3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sprite-4-4.png4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "sprite-4-4.png4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sprite-9-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprite-9-3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/9c09d467a3f0be9ac52b9e7a6d7198ebe42c4f92c8043b8c2d58c19a4b3b7c4e-sprite-9-3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/sprite-9-3.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "sprite-9-3.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sprite-1-1.png4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "sprite-1-1.png4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sprite-8-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprite-8-4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/b8cecfb14a4f00eefcb7f9734c162ddb51c258c3658e3716c628ece2aaa8a88a-sprite-8-4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/sprite-8-4.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "sprite-8-4.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Throne.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Throne.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/be95a2816e79b5247f3bdaa158f45f8120dbe733cc5795939c1e8fe242fdc257-Throne.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/sprite-4-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprite-4-1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/32f7075494f79afe10297710b04fd8ef9db0e9d390e26f02059d49d69c919a9c-sprite-4-1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/carpet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "carpet.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/4a826443bdc5c622ddaef080d5002dd6a92afec1ffe55c8a5cacb9e1eb084290-carpet.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/castle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "castle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/7bdbaa11edc27da2851e4bdf048a7beaf81ef4eba793c26d506821c79c92fbed-castle.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/castle2 - Copy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "castle2 - Copy.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/7918fe29f80e1d3c7f023a0395c27ae11356131aaf1e7b4f0f3742bf4058d9df-castle2 - Copy.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/hurt_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hurt_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d3b2e2c474009903dee757b9b522d2ff02a2dd01cab622f9a28ed4e09853a2ac-hurt_1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/hurt_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hurt_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/540f007f3cd49240668b9f3674c7045f894788f12c4fc329df70bbf28ed54e94-hurt_2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/hurt_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hurt_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d4b0cc6df2c55bc3880f02bf3ab5931f6115027a4a00faf2af1a6fe1feebb3e6-hurt_3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/hurt_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hurt_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f1ba94d279f3475dd32b54c3102804fd39ec85ad40ffd47dda46b0e45dda5de6-hurt_4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/hurt_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hurt_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e3c5e34eaee8d3ba6bc249dcc879207324552993c6c4a35df1a567b18ac05535-hurt_5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Hurt.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hurt",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hurt2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hurt2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hurt3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hurt3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hurt4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hurt4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hurt5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hurt5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gash_Phase_2_Grunt.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Gash_Phase_2_Grunt.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/defb9c6f4ff045ccd010604fae318377292dcffc58fd441503432302faac656f-Gash_Phase_2_Grunt.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Spike_Attack_Hit_box.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spike_Attack_Hit_box",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Spike_Attack_Hit_box2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spike_Attack_Hit_box2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Spike_Attack_Hit_box3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spike_Attack_Hit_box3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Spike_Attack_Hit_box4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spike_Attack_Hit_box4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Spike_Attack_Hit_box5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spike_Attack_Hit_box5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Boss_Spike_ATK (Harpooners FIRE).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss_Spike_ATK (Harpooners FIRE).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/9b0562eaa3a37b91738573df24030627233e5ef76701cd7ac6f51038119f158a-Boss_Spike_ATK (Harpooners FIRE).mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Gash_Spike_Attack.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Gash_Spike_Attack.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/fe88705ac44f630a94b1e028976696ef762012dcc0053f2d4eabce329ce5d0a6-Gash_Spike_Attack.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/trap_animation.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "trap_animation.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ce40c590c5cc05d31b79c73585d1bddbd3309a8b3a3e092442b6e52848c1f33e-trap_animation.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Spike_Attack_Hit_box6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spike_Attack_Hit_box6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/alien_plant_enemy1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "alien_plant_enemy1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/25fe5c6fe011536e68601fae36679c229bd8e3c2426511d63b8b6db909422212-alien_plant_enemy1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/alien_plant_enemy2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "alien_plant_enemy2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/a35b5c1a89a8b6f627ac5b2c264d73a7d82da2257812a47b54eff6634183582f-alien_plant_enemy2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/alien_plant_enemy3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "alien_plant_enemy3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/06d2a9a82b5c42f2dcbd16ebb6eb16a2b783ddd33f659d25b47f223e606a26bb-alien_plant_enemy3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/alien_plant_enemy4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "alien_plant_enemy4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/6c1652d16584391beef5762da344ae5cf6108551f6efeb01d85b30d42bdf4028-alien_plant_enemy4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/alien_plant_enemy5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "alien_plant_enemy5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/3be1c83c7b2eb4a213deb1433683aaa63761bd6159c5071e9ce2da352540b712-alien_plant_enemy5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/dc253c53677987693cb0f496eb537406421ad3a4ca5f877d603181070d174828-demon_idle_1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d9c3f2538b2002c0a9dce0dfb9fdfaf850f6fee608c1ccae5fe1b095878b9eea-demon_idle_2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ab5b9b06a611e43a22945dd620644f793c5a2ef3a73a52d412ebcb3e2647631d-demon_idle_3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/3cfdc30147b666d3c6a80164d858e389c2b8862bbf3750e850373a4c38188e45-demon_idle_4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_idle_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_idle_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/cac303d0f680b5c1094f267ed6b8b96dcf9f5534a01b660b9380777b97852c40-demon_idle_5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_idle_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_idle_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/eeeeeae10d16ef47f800aa03c675a99667a29fc6f68c37d0cf1dc2b86dab77e9-demon_idle_6.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_idle_7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_idle_1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_idle_8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_idle_2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_idle_9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_idle_3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_idle_10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_idle_4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_idle_11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_idle_5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_idle_12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_idle_6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/I Am YOUR LIGHTHOUSE.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "I Am YOUR LIGHTHOUSE.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/013a1776dd1ef7bf5d5ae00084d6d0a3c3f0602776bf6eb337653740a4106e95-I Am YOUR LIGHTHOUSE.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/speak not.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "speak not.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/cfcfe1c323e2a0aec6953f7cfa851eae7f9f05ebbba30ed643dac2cfa02a46c7-speak not.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Gash_YourBrokenHeart.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Gash_YourBrokenHeart.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/b7876656270cbc37310b8e72bd2cab95049b8a4497292ad2cf22b8f63c8b48ed-Gash_YourBrokenHeart.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Gash_Soft_Chuckle.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Gash_Soft_Chuckle.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f30bc7ea54534c03abbaf7966b88150192a2a3449c9838c71274635f7d56ae26-Gash_Soft_Chuckle.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/dd4933db2b46f20f1c2427cfc0b5d514ac5795f5c6a7cb9d48eddc5498593ff4-demon_walk_1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/6d63555ab4e6e8230db6f6346d5a653e570c773174a490a99e2c1df8ef662b27-demon_walk_2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f0bbe13dfb12f702422877bf830bb4a874f8bc53c930bfb6a5145bf8cab0d68e-demon_walk_3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/09cedc90a725b2c73c5efcf4581638f32f49fd443d67b8e81d1ebcc91536561a-demon_walk_4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/da9a27e55a6a588f8c22e161feb430fa6d1ea16d452f97a92b0aa2a753e31bbd-demon_walk_5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/247f1437d7c7c915d7d0d599a7beb85254e795150821b7ee6c1412be2d5a5276-demon_walk_6.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_7.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ef2d533f9bcd2084fc4b1937c1f699a69659f6d5b5f2fed01a3e1d678bbf81ee-demon_walk_7.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_8.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/852d660967be60f33a356adde4e67379997c1d36e0847b1611227fc8a967e22c-demon_walk_8.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_9.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/86bd87ea4cbf1e1849ad8b4cdd66c0db65eb5ed763f30d756c90fa69d6f94909-demon_walk_9.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_10.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/c69023b2d251e8510df6215896d49ec3dc2fcf87803e83cef01c8548005657a4-demon_walk_10.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_11.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/17d4b5ba4fb6362db44c4338d85c5027e67c032f24defbecd0a9b76121948518-demon_walk_11.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_walk_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_walk_12.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/eaddbc4d78b0c7b70e2f3c7facc3c914330ca2ccef85831efb011d6e57c5297f-demon_walk_12.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Minion_Basic_Atk.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk16",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk17",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk18",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk19",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk20",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk21",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk22",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk23",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk24",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk25.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk25",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk26",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk27.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk27",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk28",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk29.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk29",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion_Basic_Atk30.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Minion_Basic_Atk30",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ Minion_Run12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": " Minion_Run12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/We have a job to do boys.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "We have a job to do boys.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/108d92660927debd99b2f75eae3bce0fbb5c8e5c746a844efab5513f9d4e1bb8-We have a job to do boys.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e3c5e34eaee8d3ba6bc249dcc879207324552993c6c4a35df1a567b18ac05535-death_1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f66408728877eea67036ae9df9252c7b76c3de7a2a1aca48d7bed07d23706116-death_2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/0adf9b65fe6e957b4fc22bd15e44f6cedc11833727fdf5572151820264c972da-death_3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/4b2606ef0d2ef079ab9506b7f50908f7ea34ec38770b9c307e407255acf091a4-death_4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/7f996aab3d8fcf1e9c96770af2528a33e0b4d9d82c60a8daaf9180ff5cac94b7-death_5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/09f4b35cf69f3e27926c958b1b920c258f370f9f68e8ee4abcfed2863d006a48-death_6.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_7.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/eecc099416eb3cf50b20ffc09b0c60749c396a0b9a333409174fef31d024791d-death_7.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_8.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/6fc0610e735325829ba8cbc8efeb00067c840755b9de7da259e3ec560c2c6b3f-death_8.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_9.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/278ba6034670ec599339d6395ce48849e77af572fcdc5dca01f0a05380983429-death_9.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_10.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f086fec10baa020aaf027440fc97f9c9010923cc4d7f22e9fb71a51d19c024d5-death_10.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "death_11.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/f086fec10baa020aaf027440fc97f9c9010923cc4d7f22e9fb71a51d19c024d5-death_11.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Death.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Death2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Death3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Death4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Death5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Death6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Death7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Death8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Death9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Death10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Death11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Death11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/heavy breathing.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "heavy breathing.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/4696d83f891df985e399dbf57c1ab1f83015251dd53f06cb81a6e6def88be61e-heavy breathing.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/look at what youve done.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "look at what youve done.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/838827c989f5987d147320d71d52828afd0ea7e0975582d9c3f91c610f10b1ac-look at what youve done.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/I've freed you of your guilt.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "I've freed you of your guilt.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/63d7526112ab284aa3f356a2e0045bb90c3367382647d32474a46f0887b28d5d-I've freed you of your guilt.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Fault_again.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Fault_again.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/5d04348f87a8d3ae6f3781b20ee0142ba498660c77a131a2af70a2cd8cccfa60-Fault_again.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/almost_dead.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "almost_dead",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/almost_dead2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "almost_dead2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/721677d12935f6a1c6e01305d845febde1aa482eb508e594f6dd10b260b26c8e-demon_death_1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/c68bb17038383c2363587f3f14fa340892b8ed4713a066e4604d97311abcbf4c-demon_death_2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d1ba70583d6553ad01929e40f0010e7458acc71cc7f6b8fd4f6af679dce261fe-demon_death_3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/5bc6beee416cddc663feb4af52ef9df1c66bb1967da9ce329e01028ba427a0c9-demon_death_4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/0d38ce7ce308b3d5d578fda06ef7f46460c08e566cbeb2fb05c06d2749b18da0-demon_death_5.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/7fb1a4999b5f7193bba97f002f7ca4d97a1d5d3d2c11e95ff2412d5fcc2303ef-demon_death_6.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_7.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/0a36c858d7f021bb2d4277662aebe32e1bc8f6b353b1192b0774db6b262a7ceb-demon_death_7.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_8.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/0a9a82c0568ddb4ee0aa4eeed51e604474a655f20d0855fb26955ce55c151a4a-demon_death_8.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_9.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/6235b4c50b4b2ca018aa9bc64660d5d2149ce574b4e1de8a45d7b0b4403077bd-demon_death_9.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_10.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/7dc1a2f883e7908b3d248bc0b727b2328b4ad8f4f1b88c8be09937f1aab63598-demon_death_10.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_11.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/cf533c559eb2e5f9867d0385d94f988f6b00b85fbba1cc8ed0bdf63361c55db8-demon_death_11.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_12.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/560750003567052f48449f74acd51f074fc8887379379f91b4132d44087d7539-demon_death_12.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_13.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/754a226baa4e0353140301de39f02047543ff52a4f5bc844f54bc76d906344a7-demon_death_13.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_14.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/bb4bb53e3b8aa6287c3fe2421df7c4e4e06a43fd98e65bfc48e4586961ac369f-demon_death_14.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_15.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/2178dd44ed9b54a67ae938faa40569ed6d3cf0ffeb6b7488b63d4836871db3a5-demon_death_15.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_16.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/53944319afcd4146f9e4c0ae5d6e3dc344728570b3ae8df0426a1ed25e05fb41-demon_death_16.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_17.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/2f190cd8fdc7a2308058f8600fcae1118c6f20819a82f756d78b331b2697aec5-demon_death_17.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_18.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/da66dd9c858f03811c2d8e8ab7261d7297d7c4b6c0de87333e3ff296c8705276-demon_death_18.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_19.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/9662371b4429fba82d9f71c4d48f2b0b6b90820daa8c799e3045728fd5f27fe2-demon_death_19.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_20.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/bcebb2ecc0364228e4cb3513b49670e4e4a652843ce0a580e3a83a8cbc3cb2ec-demon_death_20.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_21.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/907653810ca65044bd3310849f0a283440def578c372797ad372759f2eb4108e-demon_death_21.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "demon_death_22.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/907653810ca65044bd3310849f0a283440def578c372797ad372759f2eb4108e-demon_death_22.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/death.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death25.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death16",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death27.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death17",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death18",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death29.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death19",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death30.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death20",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death31.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death21",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death32.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death22",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Minion Death.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Minion Death.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e595e42ce172a7cb8b12164ad12a85d164149c69d29683e225b5424e91fee8ef-Minion Death.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Spread Out.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Spread Out.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ddb74d1accbc29c472ef3eede438923d1205106302343c1f7efd3ee9cfdf36f3-Spread Out.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Minon Death 2 (head on a platetr).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Minon Death 2 (head on a platetr).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/4c117fb95110a6d75e43d56101a1b953690b186b5b3daa5cbd053566342169e9-Minon Death 2 (head on a platetr).mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/No witnesses.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "No witnesses.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/d78390d5d38b9ddf4d8afac1d273c2960b636c096f39df17a253ac0d7dc2d0fe-No witnesses.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Minion Death (sins).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Minion Death (sins).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/97537ddb2651ef6deed8bf908916cf476f5192dabd0961f2e287fe7cdf047272-Minion Death (sins).mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/demon_death_23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_25.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_27.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_29.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_30.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_31.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_32.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_33.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_34.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_35.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_36.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_38.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_16",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_39.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_17",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_40.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_18",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_41.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_19",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_42.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_20",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_43.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_21",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_44.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_22",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_45.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_23",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_46.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_24",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_47.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_25",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_48.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_26",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_49.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_27",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_50.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_28",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_51.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_29",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_52.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_30",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_53.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_31",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_54.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_32",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_55.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_33",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_56.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_34",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_57.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_35",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_58.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_36",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_59.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_37",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_60.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_38",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_61.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_39",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_62.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_40",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_63.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_41",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_64.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_42",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_65.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_43",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/demon_death_66.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "demon_death_44",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/LMS_Voice_LINE (Oresmen to the deck).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "LMS_Voice_LINE (Oresmen to the deck).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/a95386c2a8561eef36e847c230348e61756650202cf447005c1dfc099c47dda4-LMS_Voice_LINE (Oresmen to the deck).mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/trap_sound1.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "trap_sound1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/bb52407d0eed2504dc71f145769d9b0ca851fceb84d67397710446d52295bfc1-trap_sound1.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/NewSprite40.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite21",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/frame_0_delay-0.08s.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frame_0_delay-0.08s.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/534d068ea0ba0a319bf6c97cf6f9b7a89af06aee0ee7b94760aa1ca0601e6ca6-frame_0_delay-0.08s.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/frame_1_delay-0.08s.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frame_1_delay-0.08s.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e0699a362c6ff8b7adbf18c90e75133efdd0c66b5f486b502c764499e05f4b0d-frame_1_delay-0.08s.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/frame_2_delay-0.08s.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frame_2_delay-0.08s.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ffb1a61bb4130c5df15ee42ca7b04f19a314091c5b64b2ab5c052f794e4a3f72-frame_2_delay-0.08s.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/frame_3_delay-0.08s.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frame_3_delay-0.08s.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/21a89b1a50aec91d4f9fd49686332cddafe0291f6b2a27795a4741bb9ca586f3-frame_3_delay-0.08s.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/534d068ea0ba0a319bf6c97cf6f9b7a89af06aee0ee7b94760aa1ca0601e6ca6-1.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/e0699a362c6ff8b7adbf18c90e75133efdd0c66b5f486b502c764499e05f4b0d-2.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/ffb1a61bb4130c5df15ee42ca7b04f19a314091c5b64b2ab5c052f794e4a3f72-3.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/21a89b1a50aec91d4f9fd49686332cddafe0291f6b2a27795a4741bb9ca586f3-4.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/trap_Step_on_effect.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "trap_Step_on_effect.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/196f44b96eb791e830f84b9e9fb4606012b94d50c48a6ab31f52b3ccbe111ce1-trap_Step_on_effect.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/trap_Step_on_2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "trap_Step_on_2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/65ae34c7669f2e115dda753b2fc4c56874aa093fd6ba839579694d7278d78379-trap_Step_on_2.mp3",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/trap_step_on_3.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "trap_step_on_3.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/9ef0572f-2dbf-4d95-8ddc-3ca1eadb29c8/resources/7a6d97712a5e75dcf811c516fb1ad4a41e3f0921cf5bf703e8712c382da70950-trap_step_on_3.mp3",
+          "name": "cloud-project-resource"
+        }
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/boss_fight"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game-over"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/main_menu"
+    }
+  ],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/prototype_movement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/phase_1_attacks"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/music_controller"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/prototype_phase-one-attack"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/phase_2_attacks"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/phase_3_attacks"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/lms_attacks"
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/behaviorremapper"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject3d"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/rectanglemovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/platformercharacteranimator"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/topdownmovementanimator"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/twochoicesdialogboxes"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/autotyping"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    }
+  ],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/untitled-external-layout"
+    }
+  ]
+}
